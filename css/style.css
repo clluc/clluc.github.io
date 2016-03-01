@@ -1,0 +1,1233 @@
+@font-face {
+  font-family: 'bitterbold';
+  src: url('fonts/bitter-bold-webfont.eot');
+  src: url('fonts/bitter-bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/bitter-bold-webfont.woff') format('woff'), url('fonts/bitter-bold-webfont.ttf') format('truetype'), url('fonts/bitter-bold-webfont.svg#bitterbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bitteritalic';
+  src: url('fonts/bitter-italic-webfont.eot');
+  src: url('fonts/bitter-italic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/bitter-italic-webfont.woff') format('woff'), url('fonts/bitter-italic-webfont.ttf') format('truetype'), url('fonts/bitter-italic-webfont.svg#bitteritalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bitterregular';
+  src: url('fonts/bitter-regular-webfont.eot');
+  src: url('fonts/bitter-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/bitter-regular-webfont.woff') format('woff'), url('fonts/bitter-regular-webfont.ttf') format('truetype'), url('fonts/bitter-regular-webfont.svg#bitterregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #9e84ce;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #9e84ce 0%, #fe767a 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #9e84ce 0%, #fe767a 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #9e84ce 0%, #fe767a 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9e84ce', endColorstr='#fe767a', GradientType=1);
+  /* IE6-9 */
+  font: 24px 'bitterregular';
+  color: white;
+}
+a {
+  color: white;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+.scrolldown {
+  position: fixed;
+  bottom: 40px;
+  /* left: 0; */
+  right: 30px;
+  width: 42px;
+  /* margin: 0 auto; */
+  z-index: 999;
+}
+nav {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  text-align: right;
+  font-size: 12px;
+  z-index: 10;
+  z-index: 99;
+}
+nav a {
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-right: none;
+  text-decoration: none;
+  margin-right: -3px;
+  padding: 0 20px;
+  height: 30px;
+  display: inline-block;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  line-height: 30px;
+}
+nav a:hover {
+  background: #9e84ce;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #9e84ce 0%, #fe767a 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #9e84ce 0%, #fe767a 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #9e84ce 0%, #fe767a 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9e84ce', endColorstr='#fe767a', GradientType=1);
+  /* IE6-9 */
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+nav a:last-child {
+  border-right: 1px solid white;
+}
+.nave-sombra {
+  width: 73px;
+  height: 29px;
+  background: url(../img/nave-sombra.png) 0 0 no-repeat;
+  position: absolute;
+  top: 40px;
+  left: -90%;
+  z-index: 9;
+  opacity: 1;
+  right: 0;
+  margin: 0 auto;
+  background-size: 2px 2px;
+}
+.nave {
+  width: 104px;
+  height: 53px;
+  background: url(../img/nave.png) 0 0 no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  background-size: 2px 2px;
+  opacity: 0;
+}
+.logo {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  font-size: 55px;
+  margin: 0 auto;
+  color: white;
+  z-index: 3;
+  width: 285px;
+  text-align: center;
+}
+.logo img {
+  width: 135px;
+}
+.logo h1 {
+  display: block;
+  padding: 10px;
+  border-top: 1px solid white;
+  font-size: 24px;
+  font-weight: 100;
+  margin-top: 0;
+}
+.head_movil {
+  display: none;
+  width: 100%;
+}
+.head_movil img {
+  width: 100%;
+}
+.cabecera {
+  position: relative;
+  overflow: hidden;
+  background: url(../img/estrellas.png) center 5% no-repeat;
+}
+.cabecera .front {
+  position: absolute;
+  z-index: 1;
+  top: 110px;
+  z-index: 2;
+  left: -20px;
+}
+.cabecera .back {
+  position: relative;
+  float: right;
+  margin-top: 100px;
+}
+.cabecera .post_rayo,
+.cabecera .post_rayo_light {
+  position: absolute;
+  top: 84px;
+  left: 126px;
+}
+.cabecera .post_rayo .rayo_2,
+.cabecera .post_rayo_light .rayo_2 {
+  left: auto;
+  right: 0;
+  position: absolute;
+  top: 60px;
+}
+.mount {
+  margin-bottom: 0;
+}
+.mount .grid-auto {
+  background: url(../img/bg_montanias.png) 0 120% repeat-x;
+  margin: 0;
+}
+.mount .montanias {
+  width: 1970px;
+  margin: 45px auto 0;
+  position: relative;
+  height: 656px;
+}
+.mount .montanias .front-mont {
+  position: absolute;
+  z-index: 1;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 10px;
+}
+.mount .montanias .back-mont {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: -3px;
+}
+.main {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.main .bg_purple {
+  background-color: #544B68;
+  padding-top: 20px;
+}
+.main .bg_purple .build {
+  border: 1px solid white;
+  padding: 15px 7px;
+  font-size: 28px;
+  width: 600px;
+  color: white;
+  text-align: center;
+  margin: 0 auto 100px;
+  opacity: 0;
+}
+.main .bg_purple .discover,
+.main .bg_purple .blockchain,
+.main .bg_purple .team {
+  position: relative;
+  padding-top: 64px;
+  padding-bottom: 50px;
+}
+.main .bg_purple .discover .txt,
+.main .bg_purple .blockchain .txt,
+.main .bg_purple .team .txt {
+  background: #9e84ce;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #9e84ce 0%, #fe767a 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #9e84ce 0%, #fe767a 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #9e84ce 0%, #fe767a 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9e84ce', endColorstr='#fe767a', GradientType=1);
+  /* IE6-9 */
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+}
+.main .bg_purple .discover .txt h2,
+.main .bg_purple .blockchain .txt h2,
+.main .bg_purple .team .txt h2 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 100;
+  padding: 0 8px;
+}
+.main .bg_purple .discover .buho,
+.main .bg_purple .blockchain .buho,
+.main .bg_purple .team .buho {
+  width: 284px;
+  height: 134px;
+  background-image: url(../img/buho.png);
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .bg_purple .discover .buho .bocadillo,
+.main .bg_purple .blockchain .buho .bocadillo,
+.main .bg_purple .team .buho .bocadillo {
+  width: 186px;
+  height: 78px;
+  color: black;
+  font-size: 14px;
+  font-family: 'bitterregular';
+  background-image: url(../img/bocadillo.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  line-height: 78px;
+}
+.main .bg_purple .blockchain .buho {
+  left: auto;
+  right: 0;
+}
+.main .bg_purple .blockchain .buho .bocadillo {
+  float: left;
+}
+.main .bg_purple .blockchain .txt {
+  background: #f0c75e;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #f0c75e 1%, #ffa17f 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #f0c75e 1%, #ffa17f 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #f0c75e 1%, #ffa17f 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0c75e', endColorstr='#ffa17f', GradientType=1);
+  /* IE6-9 */
+  color: #544B68;
+}
+.main .bg_purple .team .txt {
+  background: #efc65d;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #efc65d 1%, #6db4c8 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #efc65d 1%, #6db4c8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #efc65d 1%, #6db4c8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efc65d', endColorstr='#6db4c8', GradientType=1);
+  /* IE6-9 */
+  color: #544B68;
+}
+.main .bg_purple .team .buho .bocadillo {
+  line-height: 16px;
+  text-align: left;
+  padding-top: 23px;
+  padding-left: 13px;
+}
+.main .border_degradado {
+  width: 100%;
+  height: 2px;
+  background: #9e84ce;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #9e84ce 0%, #fe767a 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #9e84ce 0%, #fe767a 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #9e84ce 0%, #fe767a 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9e84ce', endColorstr='#fe767a', GradientType=1);
+  /* IE6-9 */
+}
+.steps {
+  margin: 60px auto;
+}
+.steps .bocadillo h3,
+.steps .bocadillo strong {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.steps .bocadillo h3 {
+  margin-top: 0;
+}
+.steps .bocadillo strong {
+  color: #fe767a;
+  margin-bottom: 7px;
+  display: inline-block;
+}
+.steps .bocadillo p {
+  font-size: 16px;
+  margin: 0;
+  line-height: 23px;
+}
+.steps .one {
+  margin-top: 40px;
+  background-image: url(../img/discover/estrellas.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.steps .one .estrella {
+  position: absolute;
+  top: 150px;
+  left: 40px;
+  padding: 5px;
+  border: 1px solid #f0c75e;
+  z-index: 9;
+}
+.steps .one .estrella span {
+  background-color: #f0c75e;
+  width: 10px;
+  height: 10px;
+  display: block;
+}
+.steps .one .grid-8 {
+  position: relative;
+}
+.steps .one .grid-8 .bocadillo {
+  background: url(../img/discover/caja-txt.png) 0 100% no-repeat;
+  width: 589px;
+  height: 200px;
+  padding: 0 10px 0;
+  position: absolute;
+  top: 20px;
+  right: -50px;
+}
+.steps .one .grid-8 .bocadillo p {
+  width: 350px;
+}
+.steps .one .grid-4 {
+  position: relative;
+}
+.steps .one .grid-4 .observatorio {
+  float: left;
+  margin-top: 90px;
+  margin-left: 23px;
+}
+.steps .one .grid-4 .telescopio {
+  position: absolute;
+  top: 3px;
+  left: 12px;
+}
+.steps .two {
+  background: url(../img/discover/probetas-graficas.png) center bottom no-repeat;
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+.steps .two .bocadillo {
+  background: url(../img/discover/caja-txt-dos.png) 0 bottom no-repeat;
+  width: 569px;
+  height: 220px;
+  padding: 0 10px 0;
+  position: absolute;
+  top: -28px;
+  right: 40px;
+}
+.steps .two .bocadillo h3,
+.steps .two .bocadillo strong,
+.steps .two .bocadillo p {
+  width: 350px;
+  padding-left: 200px;
+}
+.steps .two .yellow-bubbles {
+  position: absolute;
+  bottom: 200px;
+  left: 210px;
+}
+.steps .two .yellow-bubbles .first {
+  position: absolute;
+  top: 50px;
+  left: 15px;
+  width: 20px;
+}
+.steps .two .yellow-bubbles .second {
+  position: absolute;
+  top: 70px;
+  left: 53px;
+}
+.steps .two .yellow-bubbles .third {
+  position: absolute;
+  top: 65px;
+  left: 80px;
+  width: 14px;
+}
+.steps .two .pink-bubbles {
+  position: absolute;
+  bottom: 280px;
+  left: 413px;
+}
+.steps .two .pink-bubbles .first {
+  position: absolute;
+  top: 90px;
+  left: 15px;
+  width: 20px;
+}
+.steps .two .pink-bubbles .second {
+  position: absolute;
+  top: 70px;
+  left: 47px;
+  width: 25px;
+}
+.steps .two .pink-bubbles .third {
+  position: absolute;
+  top: 85px;
+  left: 80px;
+  width: 14px;
+}
+.steps .two .purple-bubbles {
+  position: absolute;
+  bottom: 260px;
+  left: auto;
+  right: 400px;
+}
+.steps .two .purple-bubbles .first {
+  position: absolute;
+  top: 30px;
+  left: -31px;
+  width: 10px;
+}
+.steps .two .purple-bubbles .second {
+  position: absolute;
+  top: 50px;
+  left: 115px;
+  width: 10px;
+}
+.steps .two .purple-bubbles .third {
+  position: absolute;
+  top: 77px;
+  left: 49px;
+  width: 17px;
+}
+.steps .two .llama_prob {
+  position: absolute;
+  bottom: 52px;
+  right: 339px;
+}
+.steps .three {
+  width: 100%;
+  margin: 290px 0 150px;
+  position: relative;
+}
+.steps .three .movil_responsive {
+  display: none;
+}
+.steps .three .movil_cont {
+  margin: 0 auto;
+  width: 390px;
+  position: relative;
+}
+.steps .three .movil_cont .movil {
+  width: 100%;
+}
+.steps .three .movil_cont .llama_mov {
+  position: absolute;
+  left: 53px;
+  top: 340px;
+}
+.steps .three .robot_sup_cont {
+  width: 176px;
+  height: 205px;
+  position: absolute;
+  top: -148px;
+  right: 200px;
+}
+.steps .three .robot_sup_cont .robot {
+  width: 100%;
+}
+.steps .three .robot_sup_cont .llama_mov {
+  position: absolute;
+  right: 22px;
+  top: 157px;
+}
+.steps .three .robot_inf_cont {
+  width: 172px;
+  height: 215px;
+  position: absolute;
+  top: 220px;
+  right: 80px;
+}
+.steps .three .robot_inf_cont .robot {
+  width: 100%;
+}
+.steps .three .robot_inf_cont .llama_mov {
+  position: absolute;
+  right: 22px;
+  top: 157px;
+}
+.steps .three .bocadillo {
+  background: url(../img/discover/caja-texto-robots.png) 0 bottom no-repeat;
+  width: 585px;
+  height: 220px;
+  padding: 0 10px 0;
+  position: absolute;
+  top: -208px;
+  left: 80px;
+}
+.steps .three .bocadillo h3,
+.steps .three .bocadillo strong,
+.steps .three .bocadillo p {
+  width: 310px;
+}
+.what {
+  text-align: center;
+}
+.what .grid-container {
+  margin: 60px auto;
+}
+.what .grid-4 {
+  padding: 0 30px;
+}
+.what img {
+  display: block;
+  width: 95px;
+  margin: 0 auto 30px;
+}
+.what strong {
+  color: #fe767a;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.what p {
+  font-size: 14px;
+  line-height: 21px;
+}
+#pioneers_anchor {
+  margin: 50px auto 100px;
+}
+.carrusel_who {
+  padding-top: 60px;
+}
+.carrusel_who.grid-container {
+  margin-left: 0!important;
+  margin-right: 0!important;
+}
+.carrusel_who .grid-4 {
+  display: inline-block;
+  padding: 0 20px 20px 0;
+  background: url(../img/who/borde-foto.png) center 8px no-repeat;
+  background-size: 78%;
+}
+.carrusel_who img {
+  width: 80%;
+  margin: 0 auto 35px;
+  display: block;
+}
+.carrusel_who p {
+  font-size: 13px;
+  line-height: 19px;
+  width: 80%;
+  margin: 20px auto 0;
+  text-align: center;
+}
+.carrusel_who p strong,
+.carrusel_who p a {
+  color: #f0c75e;
+}
+.carrusel_who p span {
+  display: block;
+}
+.carrusel_who .rrss_access {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.carrusel_who .rrss_access img {
+  width: 29px;
+  display: inline-block;
+  margin: 0 4px;
+}
+.contacto {
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+.contacto h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.contacto label {
+  color: #fe767a;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  font-size: 16px;
+  display: block;
+  font-family: 'bitterbold';
+}
+.contacto .grid-8 {
+  margin-right: 0;
+  width: calc(66.66666667%);
+  background: url(../img/textarea_corner.png) 100% 100% no-repeat transparent;
+}
+.contacto input,
+.contacto textarea {
+  width: 100%!important;
+  border: none;
+  background: transparent;
+  height: 23px;
+  margin-bottom: 0;
+  font-size: 13px;
+  margin-top: 20px;
+  line-height: 12px;
+}
+.contacto input:focus,
+.contacto textarea:focus,
+.contacto input:active,
+.contacto textarea:active {
+  outline: none;
+}
+.contacto textarea {
+  margin-bottom: -10px;
+}
+.contacto .form {
+  margin: 70px 0 40px;
+  overflow: hidden;
+}
+.contacto .accept {
+  font-size: 13px;
+  overflow: hidden;
+}
+.contacto .accept input,
+.contacto .accept p {
+  display: inline-block;
+  float: right;
+}
+.contacto .accept input {
+  width: auto;
+  margin: 7px 10px 0 0;
+}
+.contacto .enviar {
+  float: right;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 30px;
+  font-family: 'bitterbold';
+  background: url(../img/borde-boton.png) bottom right no-repeat;
+  padding: 0 10px 10px 0;
+}
+.contacto .enviar span {
+  padding: 33px 54px;
+  display: inline-block;
+  background-color: #fe767a;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.contacto .enviar span:hover {
+  background-color: #CB6366;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+@-moz-document url-prefix() {
+  .contacto textarea {
+    margin-top: 27px !important;
+    height: 17px !important;
+    margin-bottom: 2px;
+  }
+}
+.footer .redes {
+  overflow: hidden;
+}
+.footer .redes .grid-6 img {
+  float: left;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.footer .redes .grid-6 img:hover {
+  background: url(../img/bg_hover.png) 0 0 no-repeat;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.footer .redes .grid-6.first img {
+  float: right;
+}
+.footer .datos {
+  margin: 40px auto;
+  text-align: center;
+  font-size: 16px;
+}
+.footer .datos > div {
+  margin-right: 1em;
+  margin-left: 1em;
+}
+.footer .datos .cont_img_foot {
+  height: 80px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.footer .datos .cont_img_foot img {
+  display: block;
+  margin: 0 auto;
+}
+.footer .datos .cont_img_foot img.mail {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 16px;
+}
+.footer .datos a {
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: none;
+  line-height: 25px;
+}
+.footer .datos a:hover {
+  border-bottom: 1px solid white;
+}
+.footer .copy {
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0 60px;
+  font-family: 'bitterregular';
+  font-weight: 100;
+}
+
+@media (max-width: 1250px) {
+  .container {
+    width: 800px;
+  }
+  [class*="grid-"] {
+    margin-right: 1rem!important;
+    margin-left: 1rem;
+  }
+  .grid-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main .bg_purple .blockchain .txt,
+  .main .bg_purple .discover .txt,
+  .main .bg_purple .team .txt {
+    margin-top: 90px;
+  }
+  .cabecera {
+    margin-top: 180px;
+  }
+  .cabecera .front,
+  .cabecera .back {
+    width: 735px;
+    left: 0;
+  }
+  .cabecera .back {
+    width: 745px;
+    left: 21px;
+  }
+  .cabecera .post_rayo,
+  .cabecera .post_rayo_light {
+    top: 90px;
+    left: 102px;
+  }
+  .cabecera .rayo_1 {
+    width: 553px;
+  }
+  .cabecera .rayo_2 {
+    right: 6px!important;
+    top: 50px!important;
+    width: 193px;
+  }
+  .mount {
+    width: 100%;
+    margin-top: 160px;
+  }
+  .mount .montanias {
+    margin: 100px 0 0 0!important;
+    height: 396px;
+    width: 100%;
+  }
+  .mount .montanias .front-mont,
+  .mount .montanias .back-mont {
+    background-size: 1220px!important;
+  }
+  .mount .montanias .back-mont {
+    margin-top: 0;
+  }
+  .steps .one .estrella {
+    top: 90px;
+    left: 220px;
+  }
+  .steps .one .grid-8 .bocadillo {
+    background: url(../img/discover/caja-txt-sin.png) 0 bottom no-repeat;
+    top: 140px;
+    right: -190px;
+  }
+  .steps .two .bocadillo {
+    background: url(../img/discover/caja-txt-dos-sin.png) 0 bottom no-repeat;
+    width: 360px;
+  }
+  .steps .two .bocadillo h3,
+  .steps .two .bocadillo strong,
+  .steps .two .bocadillo p {
+    padding-left: 5px;
+  }
+  .steps .two {
+    background-size: 100%;
+  }
+  .steps .two .llama_prob {
+    bottom: 37px;
+    right: 184px;
+  }
+  .steps .two .yellow-bubbles {
+    bottom: 170px;
+    left: 74px;
+  }
+  .steps .two .pink-bubbles {
+    bottom: 234px;
+    left: 221px;
+  }
+  .steps .two .pink-bubbles .first {
+    display: none;
+  }
+  .steps .two .purple-bubbles {
+    bottom: 230px;
+    right: 230px;
+  }
+  .steps .two .purple-bubbles .second {
+    left: 85px;
+  }
+  .steps .three {
+    margin: 80px 0 150px;
+  }
+  .steps .three .bocadillo {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-bottom: 50px;
+    background: url(../img/discover/caja-texto-robots-sin.png) 0 bottom no-repeat;
+  }
+  .steps .robot_sup_cont {
+    top: 150px!important;
+    right: 0px!important;
+  }
+  .steps .robot_inf_cont {
+    right: 0px!important;
+    top: 490px!important;
+  }
+  .what .grid-4 {
+    padding: 0 10px;
+  }
+  .contacto .form [class*="grid-"] {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .contacto .form .grid-container {
+    margin-bottom: 0;
+  }
+  .contacto .form .enviar {
+    float: none;
+    margin: 30px auto;
+    display: block;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    width: 700px;
+  }
+  .logo {
+    top: 100px;
+  }
+  nav {
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .cabecera {
+    margin-top: 260px;
+  }
+  .cabecera .front,
+  .cabecera .back {
+    width: 650px;
+  }
+  .cabecera .back {
+    width: 660px;
+    left: 27px;
+  }
+  .cabecera .post_rayo,
+  .cabecera .post_rayo_light {
+    top: 89px;
+    left: 92px;
+  }
+  .cabecera .rayo_1 {
+    width: 486px;
+  }
+  .cabecera .rayo_2 {
+    right: -550px;
+    top: 50px!important;
+    width: 173px;
+  }
+  .main .bg_purple .build {
+    font-size: 24px;
+    width: 500px;
+  }
+  .mount {
+    margin-top: 200px;
+  }
+  .mount .montanias {
+    margin: 100px 0 0 0!important;
+    height: 396px;
+  }
+  .mount .montanias .front-mont,
+  .mount .montanias .back-mont {
+    background-size: 1210px!important;
+  }
+  .mount .montanias .back-mont {
+    margin-top: 0;
+  }
+  .mount .grid-auto {
+    width: 0!important;
+    margin: 0!important;
+  }
+  .main .bg_purple {
+    padding-top: 100px;
+  }
+  .steps .three .movil_cont {
+    /* margin: 0 0 0 80px; */
+    position: absolute;
+    left: 80px;
+    top: 270px;
+  }
+  .steps .one .grid-4 .telescopio {
+    left: -50px;
+  }
+  .steps .one .grid-4 .observatorio {
+    margin-left: -27px;
+  }
+  .steps .two .llama_prob {
+    bottom: 37px;
+    right: 158px;
+  }
+  .steps .two .yellow-bubbles {
+    bottom: 163px;
+    left: 34px;
+  }
+  .steps .two .yellow-bubbles .first {
+    display: none;
+  }
+  .steps .two .pink-bubbles {
+    bottom: 217px;
+    left: 185px;
+  }
+  .steps .two .purple-bubbles {
+    bottom: 190px;
+    right: 197px;
+  }
+  .steps .two .purple-bubbles .second {
+    left: 66px;
+    top: 10px;
+  }
+  .steps .three {
+    width: 100%;
+    margin: 120px 0 220px;
+    position: relative;
+    height: 580px;
+  }
+  .carrusel_who img {
+    width: 90%;
+  }
+  .carrusel_who .grid-4 {
+    background: url(../img/who/borde-foto.png) center 15px no-repeat;
+    background-size: 78%;
+  }
+}
+@media (max-width: 750px) {
+  .container {
+    width: 90%;
+  }
+  [class*="grid-"] {
+    width: 100%;
+  }
+  .main .bg_purple {
+    padding-top: 50px;
+  }
+  .main .bg_purple .buho {
+    left: 0!important;
+    right: 0!important;
+    margin: 0 auto;
+  }
+  .what .grid-4,
+  .footer .grid-4 {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .footer .redes .grid-6 {
+    width: 50%;
+    text-align: center;
+    margin: 0!important;
+    padding: 0;
+  }
+  .footer .redes .grid-6 img {
+    float: none!important;
+  }
+  .main .bg_purple .build {
+    font-size: 18px;
+    width: 80%;
+  }
+  .scrolldown {
+    display: none;
+  }
+  .steps .bocadillo {
+    background: none!important;
+    width: 100%;
+    text-align: center;
+  }
+  .steps .bocadillo h3,
+  .steps .bocadillo p,
+  .steps .bocadillo strong {
+    width: 100%!important;
+  }
+  .steps .one .grid-8 .bocadillo {
+    position: relative;
+    top: auto!important;
+    right: auto!important;
+    width: 100%;
+  }
+  .steps .one .telescopio {
+    display: none;
+  }
+  .steps .one .grid-4 .observatorio {
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    float: none;
+    display: block;
+  }
+  .steps .one .estrella {
+    top: 240px;
+    left: 40px;
+  }
+  .steps .two .bocadillo {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+  }
+  .steps .three .bocadillo {
+    margin-bottom: 0;
+  }
+  .steps .three {
+    height: 500px;
+    margin: 70px 0 220px;
+  }
+  .main .bg_purple .discover .buho .bocadillo,
+  .main .bg_purple .blockchain .buho .bocadillo,
+  .main .bg_purple .team .buho .bocadillo {
+    background: url(../img/bocadillo.png) 0 0 no-repeat !important;
+  }
+  .steps .three .movil_cont,
+  .steps .robot_sup_cont,
+  .steps .robot_inf_cont {
+    display: none;
+  }
+  .steps .movil_responsive {
+    width: 300px;
+    height: 387px;
+    position: relative;
+    margin: 0 auto;
+    display: block!important;
+    background: url(../img/discover/robot-movil_RWD.png) 0 0 no-repeat;
+  }
+  .steps .movil_responsive .llama_m1 {
+    width: 20px;
+    position: absolute;
+    top: 280px;
+    left: 38px;
+  }
+  .steps .movil_responsive .llama_m2 {
+    width: 20px;
+    position: absolute;
+    top: 106px;
+    right: 29px;
+  }
+  .steps .movil_responsive .llama_m3 {
+    width: 20px;
+    position: absolute;
+    top: 306px;
+    right: 27px;
+  }
+  .carrusel_who .grid-4 {
+    background: none;
+    padding: 0;
+  }
+  .steps .two {
+    background: url(../img/discover/probetas_movil.png) center bottom no-repeat;
+    width: 100%;
+    height: 645px;
+    position: relative;
+    background-size: 280px!important;
+    margin: 0 auto;
+  }
+  .steps .two .yellow-bubbles,
+  .steps .two .pink-bubbles,
+  .steps .two .purple-bubbles {
+    display: none;
+  }
+  .steps .two .llama_prob {
+    bottom: 2.5%;
+    right: -98px;
+    left: 0;
+    margin: 0 auto;
+    width: 15px;
+  }
+  .steps .two .llama_prob img {
+    width: 15px;
+  }
+  .grid-container.mount,
+  header .cabecera {
+    display: none;
+  }
+  header.container {
+    width: 100%!important;
+  }
+  .head_movil {
+    display: block;
+  }
+  .head_movil img {
+    width: 100%;
+    margin-top: 130px;
+    display: block;
+  }
+  .main {
+    position: relative;
+  }
+  .nave,
+  .nave-sombra {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  nav a {
+    padding: 0 10px;
+  }
+  .head_movil img {
+    margin-top: 170px;
+  }
+}
+@media (max-width: 400px) {
+  .main .bg_purple .buho {
+    background: url(../img/buho.png) 187px 0 no-repeat !important;
+  }
+}

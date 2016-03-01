@@ -1,0 +1,23 @@
+                            
+/* TEAM */
+
+                            
+Developer: Daniel Castilla
+Site: daniel.castilla [at] trackglobe.com          
+Twitter: @mimiscrooge                          
+Location: Zaragoza, Aragon, Spain
+
+Designer: Aby Sánchez
+Site: abysanchez.es
+Twitter: @abysanchezp          
+Location: Zaragoza, Spain
+
+                            
+/* SITE */
+
+                            
+Last update: 2016/03/01
+Language: English                      
+Standards: HTML5, CSS3
+Components: Modernizr, jQuery
+Software: Adobe Illustrator, Adobe Photoshop, Sublime Text
