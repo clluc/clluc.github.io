@@ -124,7 +124,7 @@ nav a:last-child {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 9;
+  z-index: 999;
   background-size: 2px 2px;
   opacity: 0;
 }
@@ -807,7 +807,70 @@ nav a:last-child {
   font-family: 'bitterregular';
   font-weight: 100;
 }
-
+/* COOKIES */
+.divascookies {
+  position: fixed;
+  top: auto!important;
+  bottom: 0!important;
+  width: 100%;
+  background: #78699F;
+  color: #fff;
+  display: none;
+  z-index: 999999;
+}
+.divascookies > .divascookies-banner-container {
+  position: relative;
+  padding: 15px 20px 0;
+  overflow: hidden;
+  text-align: center;
+}
+.divascookies p.divascookies-banner-text {
+  position: relative;
+  line-height: 1.3em;
+  font-size: 16px;
+  display: block;
+  padding: 0 10px 0 0;
+  width: 980px;
+  margin: 0 auto;
+}
+@media (max-width: 979px) {
+  .divascookies p.divascookies-banner-text {
+    width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  .divascookies > .divascookies-banner-container {
+    padding: 15px 0 5px;
+  }
+  .divascookies p.divascookies-banner-text {
+    font-size: 13px;
+  }
+  .divascookies-accept-button-container > .divascookies-accept-button-text {
+    font-size: 13px!important;
+  }
+}
+span.divascookies-policy-link a {
+  white-space: nowrap;
+  color: #fff;
+  text-decoration: underline;
+}
+span.divascookies-policy-link a:hover {
+  text-decoration: none;
+  transition: color 0.3s ease 0s;
+}
+.divascookies-banner-container > .divascookies-accept-button-container {
+  display: inline-block;
+  margin-top: 5px;
+}
+.divascookies-accept-button-container > .divascookies-accept-button-text {
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 9px 10px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease 0s;
+}
 @media (max-width: 1250px) {
   .container {
     width: 800px;

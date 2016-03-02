@@ -19,5 +19,5 @@ Location: Zaragoza, Spain
 Last update: 2016/03/01
 Language: English                      
 Standards: HTML5, CSS3
-Components: Modernizr, jQuery
+Components: Modernizr, jQuery, Bootstrap, divascookies, slick, scrollme, viewportchecker
 Software: Adobe Illustrator, Adobe Photoshop, Sublime Text
