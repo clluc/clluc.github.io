@@ -1,0 +1,69 @@
+.logo.legal {
+  top: 120px;
+}
+.cabecera.legal {
+  height: 350px;
+  margin-top: 50px;
+}
+.main.legal {
+  position: relative;
+  height: auto;
+  top: auto;
+  margin-top: 50px;
+}
+.main.legal .parrafo {
+  padding: 25px 50px;
+}
+.main.legal .parrafo h3 {
+  margin-top: 0;
+  color: #fe767a;
+  margin-bottom: 7px;
+  display: inline-block;
+  font-size: 16px;
+}
+.main.legal .parrafo p {
+  font-size: 16px;
+  margin: 0;
+  line-height: 23px;
+}
+.main .bg_purple.legal {
+  position: relative;
+  padding: 50px 0;
+}
+.main .bg_purple.legal .buho {
+  top: -90px;
+}
+.main .bg_purple .buho {
+  width: 284px;
+  height: 134px;
+  background-image: url(../img/buho.png);
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .bg_purple .buho .bocadillo {
+  width: 186px;
+  height: 78px;
+  color: black;
+  font-size: 14px;
+  font-family: 'bitterregular';
+  background-image: url(../img/bocadillo.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  line-height: 78px;
+}
+@media (max-width: 1250px) {
+  .footer .copy.legal {
+    padding: 70px 0;
+  }
+}
+@media (max-width: 750px) {
+  header .cabecera.legal {
+    display: block;
+  }
+}
