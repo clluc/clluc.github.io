@@ -807,6 +807,12 @@ nav a:last-child {
   font-family: 'bitterregular';
   font-weight: 100;
 }
+.footer .copy a {
+  text-decoration: none;
+}
+.footer .copy a:hover {
+  text-decoration: underline;
+}
 /* COOKIES */
 .divascookies {
   position: fixed;
