@@ -12,12 +12,12 @@ Site: abysanchez.es
 Twitter: @abysanchezp          
 Location: Zaragoza, Spain
 
-                            
-/* SITE */
+Developer: Alberto Gomez Toribio
+Site: http://linkedin.com/in/gotoalberto
+Twitter: @gotoalberto
+Location: Madrid, Madrid, Spain
 
-                            
-Last update: 2016/03/01
-Language: English                      
-Standards: HTML5, CSS3
-Components: Modernizr, jQuery, Bootstrap, divascookies, slick, scrollme, viewportchecker
-Software: Adobe Illustrator, Adobe Photoshop, Sublime Text
+Developer: Álvaro Castellanos López
+Site: alvarocaste.github.io/resume
+Twitter: @AlvaroCaste
+Location: Madrid, Madrid, Spain
