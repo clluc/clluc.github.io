@@ -12,7 +12,7 @@
   margin-top: 50px;
 }
 .main.legal .parrafo {
-  padding: 25px 50px;
+  padding: 25px 50px 20px;
 }
 .main.legal .parrafo h3 {
   margin-top: 0;
@@ -25,6 +25,9 @@
   font-size: 16px;
   margin: 0;
   line-height: 23px;
+}
+.main.legal .parrafo .subparrafo {
+  margin-bottom: 25px;
 }
 .main .bg_purple.legal {
   position: relative;
@@ -56,6 +59,13 @@
   text-align: center;
   font-weight: bold;
   line-height: 78px;
+}
+ul {
+  list-style: none;
+}
+li {
+  font-size:16px;
+  margin: 5px 0;
 }
 @media (max-width: 1250px) {
   .footer .copy.legal {
