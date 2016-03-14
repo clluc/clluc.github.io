@@ -820,7 +820,7 @@ nav a:last-child {
 }
 .divascookies > .divascookies-banner-container {
   position: relative;
-  padding: 15px 20px 0;
+  padding: 0 20px;
   overflow: hidden;
   text-align: center;
 }
@@ -828,19 +828,13 @@ nav a:last-child {
   position: relative;
   line-height: 1.3em;
   font-size: 16px;
-  display: block;
-  padding: 0 10px 0 0;
-  width: 980px;
-  margin: 0 auto;
-}
-@media (max-width: 979px) {
-  .divascookies p.divascookies-banner-text {
-    width: 90%;
-  }
+  display: inline-block;
+  padding-right: 10px;
+  margin: 0;
 }
 @media (max-width: 767px) {
   .divascookies > .divascookies-banner-container {
-    padding: 15px 0 5px;
+    padding-top: 5px;
   }
   .divascookies p.divascookies-banner-text {
     font-size: 13px;
@@ -860,15 +854,14 @@ span.divascookies-policy-link a:hover {
 }
 .divascookies-banner-container > .divascookies-accept-button-container {
   display: inline-block;
-  margin-top: 5px;
 }
 .divascookies-accept-button-container > .divascookies-accept-button-text {
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
   border: 1px solid #fff;
   color: #fff;
-  padding: 9px 10px;
-  margin-top: 15px;
+  padding: 6px 8px;
+  margin: 5px;
   transition: background-color 0.3s ease 0s;
 }
 @media (max-width: 1250px) {
