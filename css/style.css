@@ -710,11 +710,9 @@ nav a:last-child {
   margin: 7px 10px 0 0;
 }
 .contacto .enviar {
-  float: right;
   font-size: 18px;
   text-transform: uppercase;
   border: none;
-  margin-top: 30px;
   font-family: 'bitterbold';
   background: url(../img/borde-boton.png) bottom right no-repeat;
   padding: 0 10px 10px 0;
@@ -736,6 +734,15 @@ nav a:last-child {
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
+}
+.contacto .msgrespond {
+  margin-left: 33px;
+  text-align: right;
+  margin-top: 23px;
+  font-size: 14px;
+}
+.contacto .msgrespond p {
+  display: none;
 }
 @-moz-document url-prefix() {
   .contacto textarea {
@@ -1003,6 +1010,10 @@ span.divascookies-policy-link a:hover {
     float: none;
     margin: 30px auto;
     display: block;
+  }
+  .contacto .msgrespond {
+    margin-bottom: 0!important;
+    text-align: center;
   }
 }
 @media (max-width: 900px) {
