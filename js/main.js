@@ -235,4 +235,36 @@
     });
   }
 
+  $('#sendEmail').click(function() {
+    var name = "team";
+    var at = "@";
+    var domain = "clluc.com";
+    var from = $('#email').val();
+    var question = $('#question').val();
+    sendMsg(name + at + domain, from, question);
+  });
+
+  function sendMsg(to, from, question) {
+    $.ajax({
+      url: "//formspree.io/" + to,
+      method: "POST",
+      data: {from: from, question: question},
+      dataType: "json"
+    })
+    .done(function() {
+      $('#success').show();
+      $('#error').hide();
+      cleanFormFields();
+    })
+    .fail(function() {
+      $('#error').show();
+      $('#success').hide();
+    });
+  }
+
+  function cleanFormFields() {
+    $('#email').val('');
+    $('#question').val('');
+  }
+
 });
