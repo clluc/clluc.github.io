@@ -236,4 +236,36 @@
     });
   }
 
+  $('#sendEmail').click(function() {
+    var name = "alberto";
+    var at = "@";
+    var domain = "clluc.com";
+    var from = $('#email').val();
+    var question = $('#question').val();
+    var respond = sendMsg(name + at + domain, from, question);
+    var status = respond.statusCode().status;
+
+    if (status >= 200 || status < 300) {
+      $('#success').show();
+      cleanFormFields();
+    } else {
+      $('#error').show();
+    }
+  });
+
+  function sendMsg(to, from, question) {
+    return $.ajax({
+             url: "//formspree.io/" + to,
+             method: "POST",
+             data: {from: from, question: question},
+             dataType: "json"
+    });
+  }
+
+  function cleanFormFields() {
+    $('#email').val('');
+    $('#question').val('');
+  }
+
+
 });
