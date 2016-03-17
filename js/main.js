@@ -160,7 +160,7 @@
 	if ( $(window).width()<767)
 	{
 		$('.buho').attr('data-translatex',0);
-		$('img.observatorio').attr('src','img/discover/observatorio_movil.png');
+		$('img.observatorio').attr('src','/img/discover/observatorio_movil.png');
 		$('.telescopio').css('display','none');
 	}
 	
@@ -195,13 +195,13 @@
 		{
 			$('.scrollme').removeClass('scrollme');
 			$('.buho').attr('data-translatex',0);
-			$('img.observatorio').attr('src','img/discover/observatorio_movil.png');
+			$('img.observatorio').attr('src','/img/discover/observatorio_movil.png');
 			$('.telescopio').css('display','none');
 		}
 		else{
 			$('.scrollme').addClass('scrollme');
 			$('.buho').attr('data-translatex',0);
-			$('img.observatorio').attr('src','img/discover/observatorio.png');
+			$('img.observatorio').attr('src','/img/discover/observatorio.png');
 			$('.telescopio').css('display','block');
 		}
 	});
