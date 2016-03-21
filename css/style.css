@@ -68,13 +68,20 @@ nav {
   z-index: 10;
   z-index: 99;
 }
+nav .contLinkNav,
+nav .contLang {
+  display: inline-block;
+}
+nav .contLang {
+  float: right;
+}
 nav a {
   text-transform: uppercase;
   border: 1px solid white;
   border-right: none;
   text-decoration: none;
   margin-right: -3px;
-  padding: 0 20px;
+  padding: 0 15px;
   height: 30px;
   display: inline-block;
   -webkit-transition: all 300ms ease;
@@ -83,6 +90,10 @@ nav a {
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
   line-height: 30px;
+}
+nav a.last {
+  border-right: 1px solid white;
+  margin-right: 10px;
 }
 nav a:hover {
   background: #9e84ce;
@@ -101,8 +112,16 @@ nav a:hover {
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
 }
-nav a:last-child {
-  border-right: 1px solid white;
+nav a.lang {
+  border: none;
+  padding: 0 5px;
+}
+nav a.lang:hover {
+  background: transparent;
+}
+nav a.lang.active {
+  cursor: default;
+  text-decoration: underline;
 }
 .nave-sombra {
   width: 73px;
