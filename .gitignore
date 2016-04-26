@@ -1,5 +1,6 @@
-**/_site/
-**/vendor/
+_site/
+vendor/
 .*.swp
-**/.bundle/
+.bundle/
 Gemfile.lock
+.sass-cache

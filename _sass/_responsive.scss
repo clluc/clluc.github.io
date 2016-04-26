@@ -1,0 +1,143 @@
+@media (max-width: 1000px) {
+
+  .tagline span {
+    display:none;
+  }
+
+  .container > header, .container > section, .container > footer {
+    padding:0;
+    margin:1.5em 10%;
+  }
+
+  .container > section {
+    padding-bottom:1.5em;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .divascookies {
+    > .divascookies-banner-container {
+      padding-top: 5px;
+    }
+
+    p.divascookies-banner-text {
+      font-size: 13px;
+    }
+
+    > .divascookies-accept-button-text {
+      font-size: 13px!important;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+
+  article {
+    padding-top:30px;
+
+    .container > header, .container > section, .container > footer {
+      padding:0;
+      margin:1.5em 10%;
+    }
+
+    .container > footer {
+      padding:2em 0;
+    }
+
+    .full, pre {
+      margin:1em 0;
+    }
+
+    pre {
+      padding:1em;
+    }
+
+    blockquote {
+      margin:1em 0;
+
+      p {
+        font-size:1em;
+      }
+    }
+
+    h1 {
+      font-size:1.8em;
+    }
+
+    h2 {
+      font-size:1.4em;
+    }
+
+    p {
+      font-size:0.9em;
+    }
+  }
+
+  .blog-cover {
+    height:200px;
+
+    img {
+      width:auto;
+    }
+
+    section {
+      padding:60px 0 0;
+      text-align:center;
+
+      a {
+        margin:0.5em;
+      }
+    }
+    h1 {
+      font-size:1.5em;
+      display: none !important;
+    }
+
+    h3 {
+      font-size:1em;
+    }
+  }
+
+  .site-nav .tagline span {
+    display:none;
+  }
+
+  .site-nav {
+    #navigation {
+      a {
+        margin-right: -6px;
+        padding: 0 7px;
+      }
+
+      .brand {
+        display:inline-block;
+      } 
+    }
+  }
+
+  .site-footer {
+    margin-top:0;
+    padding:2em 10%;
+    text-align:center;
+
+    nav {
+      display:block;
+      float:none !important;
+      padding:1em;
+    }
+  }
+
+  .index {
+    padding:0;
+    margin:0 10%;
+
+    > div {
+      margin:0;
+    }
+
+    img {
+      display:none;
+    }
+  }
+}

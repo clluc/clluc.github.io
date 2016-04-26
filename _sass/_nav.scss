@@ -1,0 +1,108 @@
+.site-nav {
+    background:$gradient;
+    background: -moz-linear-gradient(left, $gradient 0%, $accent 100%);
+    background: -webkit-linear-gradient(left, $gradient 0%, $accent 100%);
+    background: linear-gradient(to right, $gradient 0%, $accent 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gradient', endColorstr='$accent', GradientType=1);
+    height:80px;
+    box-shadow:0 0 1px 1px rgba(0,0,0,0.1);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    transition:all 0.35s ease;
+    z-index:100;
+    
+    .caret {
+        opacity:0.2;
+    }
+    
+    .brand img {
+        height:40px;
+        margin-right:10px;
+        margin-top:-2px;
+    }
+    
+    .dropdown {
+        display:inline-block;
+    }
+    
+    nav {
+        position: absolute;
+        right: 30px;
+        text-align: right;
+        padding: 22px 30px;
+    }
+    
+    #navigation {
+        padding-right:0;
+        
+        a {
+            text-transform: uppercase;
+            border: 1px solid white;
+            border-right: none;
+            text-decoration: none;
+            margin-right: -6px;
+            padding: 0 15px;
+            height: 32px;
+            -webkit-transition: all 300ms ease;
+            -moz-transition: all 300ms ease;
+            -ms-transition: all 300ms ease;
+            transition: all 300ms ease;
+            line-height: 30px;
+            color:#fff;
+            display:inline-block;
+            
+            &:hover {
+                background: $gradient;
+                background: -moz-linear-gradient(left, $gradient 0%, $accent 100%);
+                background: -webkit-linear-gradient(left, $gradient 0%, $accent 100%);
+                background: linear-gradient(to right, $gradient 0%, $accent 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gradient', endColorstr='$accent', GradientType=1);
+                -webkit-transition: all 300ms ease;
+                -moz-transition: all 300ms ease;
+                -ms-transition: all 300ms ease;
+                -o-transition: all 300ms ease;
+                transition: all 300ms ease;
+                color: #fff;
+            }
+
+            &.last {
+              border-right: 1px solid white;
+              margin-right: 10px;
+            }
+        }
+        
+        > a, .dropdown-toggle  {
+            font-size:12px;
+        }
+        
+        .dropdown-toggle {
+            padding: 6px 0.5em;
+            text-align: center;
+            
+            &:hover {
+                background:#eee;
+            }
+        }
+    }
+    
+    .tagline {
+        float:right;
+        text-align:right;
+        font-size:15px;
+        font-weight:600;
+        
+        span {
+            line-height:0;
+            padding-right:20px;
+        }
+    }
+}
+
+body.nav-hidden {
+    .site-nav {
+        top:-100px;
+        transition:all 0.35s ease;
+        -webkit-transform: translate3d(0px, 0, 0px);
+    }
+}
+
