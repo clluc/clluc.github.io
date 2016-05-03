@@ -11,7 +11,7 @@ author:
   name: CLLUC
   twitter: joinclluc
   gplus: 
-  bio: Blockchain specialist
+  bio: Digital transformation through Blockchain
   image: clluc.png
 ---
 
