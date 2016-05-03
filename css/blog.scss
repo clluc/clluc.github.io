@@ -1,0 +1,30 @@
+---
+# The scss file which include files from _sass/
+---
+/* CONFIGURATION */
+
+/* Bodytext font */
+$font: "Bitter";
+
+/* Font for headings */
+$fontheadings: "Bitter"; 
+
+/* Text colors */
+$text: #21272d;
+$textmuted: #c7c7c7;
+$accent: #fe767a;
+$gradient: #9e84ce;
+$background: #544b68;
+$background-dark: #3a304f;
+$popup-cookies: #78699F;
+
+/* IMPORT CSS FILES */
+@import "bootstrap";
+@import "base";
+@import "nav";
+@import "article";
+@import "icons";
+@import "syntax";
+@import "divascookies_prism";
+@import "banner_cookies";
+@import "responsive";

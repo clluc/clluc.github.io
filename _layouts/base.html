@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ site.inc.title }}{% else %}{{ site.inc.subtitle }}{% endif %}</title>
+    {% if site.inc.google_font %}<link href="https://fonts.googleapis.com/css?family={{ site.inc.google_font }}" rel="stylesheet" type="text/css">{% endif %}
+    <link href="/css/blog.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/{{ site.inc.jquery }}/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/blog.js"></script>
+    <script type="text/javascript" src="/js/jquery.divascookies-0.6.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.divascookies-prism.js"></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/img/blog/{{ site.inc.logo }}"/>
+    <link href="{{ site_url }}/feed.xml" rel="alternate" type="application/rss+xml" title="{{ site.inc.title }}" />
+    <meta name="title" content="{% if page.title %}{{ page.title }} {% else %}{{ site.inc.title }}{% endif %}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    {% if page.site.gplus %}<link rel="publisher" href="https://plus.google.com/{{ site.inc.gplus }}">{% endif %} 
+    {% if page.author.gplus %}<link rel="author" href="https://plus.google.com/{{ page.author.gplus }}">{% endif %}       
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} {% else %}{{ site.inc.title }}{% endif %}"/>
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+    {% if page.cover_image %}
+    <meta property="og:image" content="{{ site.url }}/img/blog/{{ page.cover_image }}"/>
+    {% if page.main_image %}
+    <meta property="og:image" content="{{ site.url }}/img/blog/{{ page.main_image }}"/>  
+    {% endif %}
+    <meta property="og:image" content="{{ site.url }}/img/blog/{{ site.inc.logo }}"/>   
+    {% endif %}
+    {% if page.excerpt %}
+    <meta property="og:description" content="{{ page.excerpt }}"/>
+    <meta name="description" content="{{ page.excerpt }}"/>
+    {% endif %}
+    <meta property="og:site_name" content="{{ site.inc.title }}">     
+  </head>
+  <body>
+
+    <section class="site-nav">
+      <header>
+        <nav id="navigation">
+          <a href="/es#how">Cómo</a>
+          <a href="/es#what">Qué</a>
+          <a href="/es#pioneers">Equipo</a>
+          <a href="/es#contact">Contacto</a>
+          <a href="/es/blog" class="home last">Blog</a>
+        </nav>
+      </header>
+    </section>
+
+    <div class="blog-cover">
+      <section>
+        <div class="container">
+          <span class="logo">
+            <img src="/img/blog/logo.svg">
+            <h1>{{ site.inc.subtitle }}</h1>
+          </span>
+        </div>
+      </section>
+    </div>
+
+    {{ content }}
+
+    <footer class="site-footer">
+      <div class="container">
+        &copy; {{ site.time | date: "%Y" }} 
+
+        <nav>
+          <a href="{{ site.inc.url }}">{{ site.inc.company }}</a> &middot;
+          <a href="/es/blog">Blog</a> &middot;
+          {% if site.inc.product_link %}<a href="{{ site.inc.product_link }}">Product</a> &middot; {% endif %}
+          {% if site.inc.about_link %}<a href="{{ site.inc.about_link }}">About</a>{% endif %}
+        </nav>
+
+        <nav class="social">
+          {% if site.inc.twitter %}
+          <a href="https://twitter.com/{{ site.inc.twitter }}" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter-circle"></i></a>
+          {% endif %}
+          {% if site.inc.linkedin %}
+          <a href="http://linkedin.com/company/{{ site.inc.linkedin }}" title="Follow on Linkedin" target="_blank"><i class="icon icon-linkedin"></i></a>
+          {% endif %}    
+          <a href="/feed.xml" title="RSS Feed">
+            <i class="icon icon-rss"></i>
+          </a>
+        </nav>
+      </div>
+    </footer>
+
+    <div id="fb-root"></div>
+
+  </body>
+</html>
